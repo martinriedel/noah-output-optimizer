@@ -9,15 +9,14 @@ arch:
   - aarch64
   - amd64
   - i386
-startup: application
-boot: auto
+
+# Enable Ingress for the AppDaemon UI
+ingress: true
+panel_icon: mdi:chart-line
+
 map:
   - "share:rw"
   - "config:rw"
-
-# AppDaemon Configuration
-appdaemon: true
-web_port: 5050
 
 options:
   log_level: info
