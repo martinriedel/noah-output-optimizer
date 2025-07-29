@@ -12,5 +12,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: "Hassfest validation"
-        uses: "home-assistant/actions/hassfest@master"
+      - name: "Run Add-on Validator"
+        uses: "home-assistant/actions/addon-validator@master"
