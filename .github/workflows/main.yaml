@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: "Run Add-on Linter"
-        uses: "frenck/action-addon-linter@v3"
+        uses: "frenck/action-addon-linter@v2"
