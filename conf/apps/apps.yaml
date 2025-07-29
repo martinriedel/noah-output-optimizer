@@ -1,0 +1,3 @@
+noah_output_optimizer:
+  module: noah_output_optimizer
+  class: Manager

@@ -1,0 +1,12 @@
+noah_optimizer:
+  module: noah_output_optimizer
+  class: NoahOutputOptimizer
+  adjustment_interval: 30
+  consumption_sensor: sensor.shelly_pro_3em_total_active_power
+  charging_start_time: "08:00:00"
+  charging_end_time: "20:00:00"
+  noah_devices:
+    - name: "Noah Living Room"
+      soc_sensor: sensor.growatt_noah_2000_soc
+      output_control_entity: number.growatt_noah_2000_output_power
+      min_soc: 15

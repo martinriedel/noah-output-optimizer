@@ -1,0 +1,25 @@
+name: NOAH Output Optimizer
+version: "0.1.0"
+slug: noah_output_optimizer
+description: >-
+  Optimizes the output of a NOAH battery system.
+arch:
+  - armv7
+  - armhf
+  - aarch64
+  - amd64
+  - i386
+startup: application
+boot: auto
+map:
+  - "share:rw"
+  - "config:rw"
+
+# AppDaemon Configuration
+appdaemon: true
+web_port: 5050
+
+options:
+  log_level: info
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)
