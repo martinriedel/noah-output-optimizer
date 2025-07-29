@@ -1,5 +1,5 @@
 # Use the official AppDaemon base image
-FROM homeassistant/appdaemon:latest
+FROM %%BASE_IMAGE%%
 
 # The AppDaemon image handles the base setup.
 # We just need to add our custom app and its dependencies.
