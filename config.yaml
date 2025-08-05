@@ -1,5 +1,5 @@
 name: Noah Output Optimizer
-version: "1.0.0"
+version: "1.0.1"
 slug: noah-output-optimizer
 description: "Monitor and optimize Growatt Noah 2000 battery systems based on power consumption"
 url: "https://github.com/martinriedel/noah-output-optimizer"
@@ -22,4 +22,3 @@ schema:
     - str
   update_interval: int(1,3600)?
   log_level: list(debug|info|warning|error)?
-# image: "ghcr.io/martinriedel/noah-output-optimizer"
