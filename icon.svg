@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="#2196F3" stroke="#1976D2" stroke-width="8"/>
+  
+  <!-- Battery body -->
+  <rect x="160" y="180" width="192" height="120" rx="16" ry="16" fill="#FFFFFF" stroke="#1976D2" stroke-width="4"/>
+  
+  <!-- Battery terminal -->
+  <rect x="352" y="220" width="24" height="40" rx="8" ry="8" fill="#FFFFFF" stroke="#1976D2" stroke-width="4"/>
+  
+  <!-- Battery level indicator (80% charge) -->
+  <rect x="176" y="196" width="144" height="88" rx="8" ry="8" fill="#4CAF50"/>
+  
+  
+  <!-- Text "Noah" -->
+  <text x="256" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#FFFFFF">NOAH</text>
+</svg>

@@ -12,11 +12,16 @@ This is a Home Assistant add-on that controls the Growatt Noah 2000 battery stor
 # Build the add-on locally (requires Home Assistant Developer Add-on)
 docker build -t noah-output-optimizer .
 
-# Test the Python application directly
+# Test the Python application locally (requires mock HA environment)
 python3 noah_optimizer.py
 
 # Check configuration syntax
 python3 -c "import yaml; yaml.safe_load(open('config.yaml'))"
+
+# Install as local add-on in Home Assistant
+# 1. Copy files to /usr/share/hassio/addons/local/noah-output-optimizer/
+# 2. Refresh Home Assistant Supervisor add-on store
+# 3. Install from Local add-ons section
 ```
 
 ## Architecture

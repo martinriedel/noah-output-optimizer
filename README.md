@@ -18,6 +18,28 @@ This add-on reads the State of Charge (SOC) from one or more Growatt Noah 2000 b
 
 ## Installation
 
+### Local Development Installation
+
+1. Clone this repository to your Home Assistant add-ons folder:
+   ```bash
+   cd /usr/share/hassio/addons/local/
+   git clone https://github.com/martinriedel/noah-output-optimizer
+   ```
+
+2. In Home Assistant, go to **Supervisor** → **Add-on Store**
+
+3. Refresh the page - you should see "Noah Output Optimizer" in the Local add-ons section
+
+4. Click on the add-on and install it
+
+5. Configure the add-on with your Noah entity IDs
+
+6. Start the add-on
+
+### Repository Installation (Future)
+
+Once published to a container registry:
+
 1. Add this repository to your Home Assistant add-on store:
    - In Home Assistant, go to **Supervisor** → **Add-on Store**
    - Click the menu (⋮) in the top right corner
@@ -25,10 +47,6 @@ This add-on reads the State of Charge (SOC) from one or more Growatt Noah 2000 b
    - Add: `https://github.com/martinriedel/noah-output-optimizer`
 
 2. Install the "Noah Output Optimizer" add-on
-
-3. Configure the add-on with your Noah entity IDs
-
-4. Start the add-on
 
 ## Configuration
 

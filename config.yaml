@@ -22,4 +22,4 @@ schema:
     - str
   update_interval: int(1,3600)?
   log_level: list(debug|info|warning|error)?
-image: "ghcr.io/martinriedel/noah-output-optimizer"
+# image: "ghcr.io/martinriedel/noah-output-optimizer"
