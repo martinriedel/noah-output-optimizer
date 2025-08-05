@@ -1,0 +1,7 @@
+# Icon Placeholder
+# 
+# For a proper Home Assistant add-on, you should add an icon.png file (512x512 pixels recommended)
+# This file serves as a placeholder - replace with an actual PNG icon for your add-on
+#
+# The icon will be displayed in the Home Assistant add-on store
+# Consider using battery/energy-related imagery for the Noah battery optimizer
