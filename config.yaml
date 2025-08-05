@@ -1,0 +1,25 @@
+name: Noah Output Optimizer
+version: "1.0.0"
+slug: noah-output-optimizer
+description: "Monitor and optimize Growatt Noah 2000 battery systems based on power consumption"
+url: "https://github.com/martinriedel/noah-output-optimizer"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+startup: application
+boot: auto
+init: false
+options:
+  noah_entities:
+    - sensor.noah_2000_battery_soc
+  update_interval: 60
+  log_level: info
+schema:
+  noah_entities:
+    - str
+  update_interval: int(1,3600)?
+  log_level: list(debug|info|warning|error)?
+image: "ghcr.io/martinriedel/noah-output-optimizer"
