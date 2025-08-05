@@ -26,6 +26,12 @@ class HomeAssistantAPI:
             "Content-Type": "application/json",
         }
         
+        # Debug: Log token availability (but not the actual token)
+        if self.supervisor_token:
+            logging.info("Supervisor token found")
+        else:
+            logging.error("No SUPERVISOR_TOKEN environment variable found")
+        
     def get_entity_state(self, entity_id: str) -> Optional[Dict]:
         """Get the current state of an entity"""
         try:
